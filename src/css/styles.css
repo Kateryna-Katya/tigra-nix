@@ -461,3 +461,111 @@ button { font-family: inherit; }
     .section-title { font-size: 2rem; }
     .cookie-popup { left: 1rem; right: 1rem; bottom: 1rem; }
 }
+/* --- LEGAL PAGES STYLES --- */
+
+/* Отступ сверху, так как хедер фиксированный */
+.pages {
+  padding-top: calc(var(--header-height) + 40px);
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+/* Контейнер для текста (Glassmorphism уже есть в глобальных стилях, тут размеры) */
+.pages__content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+/* Заголовок страницы */
+.pages__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Вступительный текст */
+.pages__intro {
+  font-size: 1.1rem;
+  color: var(--color-text-main);
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 2rem;
+}
+
+/* Блоки с H2 и параграфами */
+.pages__block {
+  margin-bottom: 2.5rem;
+}
+
+.pages__block h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.pages__block p {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Списки */
+.pages__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pages__list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Кастомные буллеты для списка (зеленые черточки) */
+.pages__list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+/* Ссылки внутри текста */
+.pages__link {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--color-primary);
+  transition: var(--transition);
+}
+
+.pages__link:hover {
+  color: #fff;
+  border-bottom-style: solid;
+}
+
+/* Кнопка возврата */
+.pages__footer {
+  margin-top: 4rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 2rem;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+  .pages__content {
+      padding: 1.5rem;
+  }
+
+  .pages__title {
+      font-size: 1.8rem;
+  }
+}
