@@ -1,56 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/test-two/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/test-two/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/test-two/assets/styles-guStct1H.css">
-  </head>
-  <body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tigra-Nix | Инновации на пальцах</title>
+    <meta name="description" content="Образовательная платформа нового поколения. Технологии, которые работают на вас.">
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script type="module" crossorigin src="/tigra-nix/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/tigra-nix/assets/styles-MxrZaxNu.css">
+</head>
+
+  <body class="page">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="#" class="header__logo">
+          Tigra<span class="header__logo-accent">Nix</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav" id="nav-menu">
+          <ul class="header__list">
+              <li class="header__item"><a href="#hero" class="header__link">Главная</a></li>
+              <li class="header__item"><a href="#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="#benefits" class="header__link">Преимущества</a></li>
+              <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="#education" class="header__link">Обучение</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+              <li class="header__item"><a href="#faq" class="header__link">FAQ</a></li>
+          </ul>
+          <a href="#contact" class="header__cta mobile-only">Начать сейчас</a>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="header__cta desktop-only">Начать сейчас</a>
+          <button class="header__burger" id="burger-btn" aria-label="Открыть меню">
+              <i data-lucide="menu"></i>
+          </button>
+      </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
       
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__container">
+      <div class="footer__col footer__col--brand">
+          <a href="#" class="footer__logo">
+              Tigra<span class="footer__logo-accent">Nix</span>
+          </a>
+          <p class="footer__tagline">Технология нового поколения.<br>Воплотите мечты в реальность.</p>
+          <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                  <li><a href="#hero" class="footer__link">Главная</a></li>
+                  <li><a href="#about" class="footer__link">Платформа</a></li>
+                  <li><a href="#education" class="footer__link">Обучение</a></li>
+              </ul>
+          </nav>
+      </div>
+
+      <div class="footer__col footer__col--info">
+          <div class="footer__contacts">
+              <h3 class="footer__heading">Контакты</h3>
+              <a href="mailto:support@tigra-nix.click" class="footer__contact-link">
+                  <i data-lucide="mail"></i> support@tigra-nix.click
+              </a>
+              <a href="tel:+442071234567" class="footer__contact-link">
+                  <i data-lucide="phone"></i> +44 20 7123 4567
+              </a>
+              <div class="footer__contact-item">
+                  <i data-lucide="map-pin"></i> 85 Great Portland St, London, UK
+              </div>
+          </div>
+
+          <div class="footer__legal">
+              <h3 class="footer__heading">Информация</h3>
+              <ul class="footer__legal-list">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookies Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Personal Data</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="footer__bottom">
+      <div class="container">
+          <p class="footer__copyright">© 2025 Tigra-Nix. Все права защищены. Платформа уже доступна в Европе.</p>
+      </div>
   </div>
 </footer>
-
 
   </body>
 </html>
