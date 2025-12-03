@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
 
     <script src="https://unpkg.com/lucide@latest"></script>
-
+    <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
@@ -29,7 +29,12 @@
     </main>
 
     <load src="./partials/footer.html" />
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="cookies.html">Cookie политике</a>.</p>
+          <button class="btn btn--primary btn--sm" id="accept-cookies">Принять</button>
+      </div>
+    </div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
