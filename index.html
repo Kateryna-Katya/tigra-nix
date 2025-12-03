@@ -14,11 +14,11 @@
 
 
     <script src="https://unpkg.com/lucide@latest"></script>
-
+    <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script type="module" crossorigin src="/tigra-nix/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/tigra-nix/assets/styles-MxrZaxNu.css">
+  <link rel="stylesheet" crossorigin href="/tigra-nix/assets/styles-BLSBZkyz.css">
 </head>
 
   <body class="page">
@@ -52,7 +52,342 @@
 
     <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <canvas class="hero__canvas" id="hero-canvas"></canvas>
+
+  <div class="hero__overlay"></div>
+
+  <div class="container hero__container">
+      <div class="hero__content">
+          <h1 class="hero__title animate-text">
+              Инновации на пальцах:<br>
+              <span class="text-gradient">Технология</span> нового поколения
+          </h1>
+          <p class="hero__subtitle animate-text">
+              Платформа уже доступна в Европе. Откройте новые возможности, переосмыслите подход к развитию и постройте карьеру, которая работает на вас.
+          </p>
+
+          <div class="hero__actions animate-fade-up">
+              <a href="#contact" class="btn btn--primary btn--glow">
+                  Начать сейчас <i data-lucide="arrow-right"></i>
+              </a>
+              <a href="#about" class="btn btn--outline">
+                  Узнать больше
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <a href="#about" class="hero__scroll-down animate-fade-up">
+      <span class="mouse">
+          <span class="wheel"></span>
+      </span>
+      <span class="text">Листайте вниз</span>
+  </a>
+</section>
+<section id="about" class="section about">
+  <div class="container about__container">
+      <div class="about__content" data-aos="fade-right">
+          <span class="section-tag">О платформе</span>
+          <h2 class="section-title">Переосмыслите подход к <span class="text-gradient">развитию</span></h2>
+          <p class="section-text">
+              Tigra-Nix — это не просто образовательная платформа, это инновационная экосистема. Мы объединили передовую цифровую инфраструктуру и AI-инструменты для реальных задач.
+          </p>
+          <ul class="about__list">
+              <li class="about__item">
+                  <i data-lucide="check-circle" class="text-accent"></i>
+                  <span>Решения, которые меняют правила игры</span>
+              </li>
+              <li class="about__item">
+                  <i data-lucide="check-circle" class="text-accent"></i>
+                  <span>Методологии, доказавшие эффективность в UK и EU</span>
+              </li>
+              <li class="about__item">
+                  <i data-lucide="check-circle" class="text-accent"></i>
+                  <span>Экспертная поддержка на всех этапах</span>
+              </li>
+          </ul>
+      </div>
+      <div class="about__image-wrapper" data-aos="fade-left">
+          <div class="about__card glass-card">
+              <i data-lucide="trending-up" class="about__icon-float"></i>
+              <div class="about__stat">
+                  <span class="h2">+127%</span>
+                  <p>Рост эффективности</p>
+              </div>
+          </div>
+          <img src="img/placeholder.png" alt="Analytics" class="about__img">
+      </div>
+  </div>
+</section>
+
+<section id="benefits" class="section benefits">
+  <div class="container">
+      <div class="section-header text-center">
+          <span class="section-tag">Преимущества</span>
+          <h2 class="section-title">Почему <span class="text-primary">Tigra-Nix</span>?</h2>
+          <p class="section-text">Технологии, которые работают на вас с первого дня.</p>
+      </div>
+
+      <div class="benefits__grid">
+          <div class="benefit-card glass-card">
+              <div class="benefit-card__icon"><i data-lucide="zap"></i></div>
+              <h3 class="benefit-card__title">Быстрый старт</h3>
+              <p class="benefit-card__text">Подключение занимает 2 минуты. Пошаговый путь, понятный каждому.</p>
+          </div>
+
+          <div class="benefit-card glass-card">
+              <div class="benefit-card__icon"><i data-lucide="shield-check"></i></div>
+              <h3 class="benefit-card__title">Проверенный партнер</h3>
+              <p class="benefit-card__text">Мы гарантируем безопасность данных и прозрачность процессов.</p>
+          </div>
+
+          <div class="benefit-card glass-card">
+              <div class="benefit-card__icon"><i data-lucide="globe"></i></div>
+              <h3 class="benefit-card__title">Доступ в Европе</h3>
+              <p class="benefit-card__text">Предложение активно только в странах ЕС и Великобритании.</p>
+          </div>
+
+          <div class="benefit-card glass-card">
+              <div class="benefit-card__icon"><i data-lucide="cpu"></i></div>
+              <h3 class="benefit-card__title">AI-Инструменты</h3>
+              <p class="benefit-card__text">Инновационная технология для автоматизации рутины.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="innovations" class="section innovations">
+  <div class="container">
+      <div class="innovations__wrapper glass-panel">
+          <div class="innovations__content">
+              <h2 class="section-title">Инновации на пальцах</h2>
+              <p class="section-text">
+                  Мы делаем сложные технологии простыми. Откройте для себя стратегию роста на базе инноваций.
+              </p>
+              <div class="innovations__stats">
+                  <div class="stat-item">
+                      <span class="stat-number">4.0</span>
+                      <span class="stat-label">Web Версия</span>
+                  </div>
+                  <div class="stat-item">
+                      <span class="stat-number">24/7</span>
+                      <span class="stat-label">AI Ассистент</span>
+                  </div>
+              </div>
+              <a href="#contact" class="btn btn--primary">Оценить перспективы</a>
+          </div>
+          <div class="innovations__visual">
+              <div class="tech-circle"></div>
+              <img src="img/placeholder.png" alt="Innovation Tech" class="innovations__img">
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="education" class="section education">
+  <div class="container">
+      <div class="section-header text-center">
+          <span class="section-tag">База знаний</span>
+          <h2 class="section-title">Программа <span class="text-gradient">обучения</span></h2>
+          <p class="section-text">
+              Пошаговый путь, понятный каждому. От основ до внедрения AI в повседневность.
+          </p>
+      </div>
+
+      <div class="education__grid">
+          <article class="course-card glass-card" data-aos="fade-up">
+              <div class="course-card__image">
+                  <div class="course-overlay"></div>
+                  <img src="img/placeholder.png" alt="Basic Digital">
+                  <span class="course-badge">Для новичков</span>
+              </div>
+              <div class="course-card__content">
+                  <h3 class="course-card__title">Основы цифровой грамотности</h3>
+                  <p class="course-card__text">
+                      Легко разобраться без опыта. Вы узнаете, как работают современные экосистемы и как в них ориентироваться.
+                  </p>
+                  <div class="course-meta">
+                      <span><i data-lucide="clock"></i> 2 недели</span>
+                      <span><i data-lucide="bar-chart"></i> Easy</span>
+                  </div>
+                  <a href="#contact" class="btn-link">Подробнее <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+
+          <article class="course-card glass-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="course-card__image">
+                  <div class="course-overlay"></div>
+                  <img src="img/placeholder.png" alt="AI for Humans">
+                  <span class="course-badge accent">Хит</span>
+              </div>
+              <div class="course-card__content">
+                  <h3 class="course-card__title">AI для обычных людей</h3>
+                  <p class="course-card__text">
+                      Практики, применимые уже сегодня. Автоматизация рутины, создание контента и личный ассистент.
+                  </p>
+                  <div class="course-meta">
+                      <span><i data-lucide="clock"></i> 4 недели</span>
+                      <span><i data-lucide="bar-chart"></i> Medium</span>
+                  </div>
+                  <a href="#contact" class="btn-link">Подробнее <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+
+          <article class="course-card glass-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="course-card__image">
+                  <div class="course-overlay"></div>
+                  <img src="img/placeholder.png" alt="Security">
+                  <span class="course-badge">Pro</span>
+              </div>
+              <div class="course-card__content">
+                  <h3 class="course-card__title">Финансовая безопасность</h3>
+                  <p class="course-card__text">
+                      Как защитить свои активы в цифровую эпоху. Разбор угроз и построение личной стратегии защиты.
+                  </p>
+                  <div class="course-meta">
+                      <span><i data-lucide="clock"></i> 3 недели</span>
+                      <span><i data-lucide="bar-chart"></i> Hard</span>
+                  </div>
+                  <a href="#contact" class="btn-link">Подробнее <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+
+<section id="faq" class="section faq">
+  <div class="container faq__container">
+      <div class="faq__header">
+          <h2 class="section-title">Вопросы и <span class="text-primary">ответы</span></h2>
+          <p class="section-text">
+              Всё, что нужно знать перед стартом. Если не нашли ответ — пишите в поддержку.
+          </p>
+      </div>
+
+      <div class="faq__list">
+          <div class="faq__item">
+              <button class="faq__question">
+                  <span>Нужен ли опыт в IT для старта?</span>
+                  <i data-lucide="chevron-down" class="faq__icon"></i>
+              </button>
+              <div class="faq__answer">
+                  <div class="faq__content">
+                      Нет, платформа разработана так, чтобы быть понятной каждому. Мы используем принцип "Инновации на пальцах" — сложные вещи объясняются простым языком.
+                  </div>
+              </div>
+          </div>
+
+          <div class="faq__item">
+              <button class="faq__question">
+                  <span>Сколько времени занимает обучение?</span>
+                  <i data-lucide="chevron-down" class="faq__icon"></i>
+              </button>
+              <div class="faq__answer">
+                  <div class="faq__content">
+                      Программа адаптируется под ваш темп. В среднем, пользователи тратят 20-30 минут в день. Быстрый и лёгкий старт гарантирован.
+                  </div>
+              </div>
+          </div>
+
+          <div class="faq__item">
+              <button class="faq__question">
+                  <span>Доступна ли платформа вне Европы?</span>
+                  <i data-lucide="chevron-down" class="faq__icon"></i>
+              </button>
+              <div class="faq__answer">
+                  <div class="faq__content">
+                      На данный момент основной фокус — страны ЕС и Великобритания. Если вы находитесь в другом регионе, вы можете оставить заявку в лист ожидания.
+                  </div>
+              </div>
+          </div>
+
+          <div class="faq__item">
+              <button class="faq__question">
+                  <span>Как работает AI-поддержка?</span>
+                  <i data-lucide="chevron-down" class="faq__icon"></i>
+              </button>
+              <div class="faq__answer">
+                  <div class="faq__content">
+                      Наш AI-ассистент доступен 24/7. Он помогает решать технические вопросы, дает подсказки по материалам и помогает адаптировать стратегии под ваши задачи.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="container">
+      <div class="contact__wrapper glass-panel">
+
+          <div class="contact__info">
+              <h2 class="section-title">Начать сейчас</h2>
+              <p class="section-text">
+                  Заполните форму, чтобы получить бесплатную консультацию и доступ к платформе.
+              </p>
+
+              <div class="contact__details">
+                  <div class="contact__item">
+                      <i data-lucide="map-pin" class="text-primary"></i>
+                      <div>
+                          <h4>Офис в Лондоне</h4>
+                          <p>85 Great Portland St, London, UK</p>
+                      </div>
+                  </div>
+                  <div class="contact__item">
+                      <i data-lucide="mail" class="text-primary"></i>
+                      <div>
+                          <h4>Email</h4>
+                          <p>support@tigra-nix.click</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="contact__note">
+                  * Предложение ограничено. Платформа уже доступна в Европе.
+              </div>
+          </div>
+
+          <form class="contact__form" id="lead-form">
+              <div class="form-group">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" id="name" name="name" placeholder="Иван Петров" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="phone">Телефон</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Только цифры" required>
+                  <small class="error-msg" id="phone-error">Разрешены только цифры</small>
+              </div>
+
+              <div class="form-group captcha-group">
+                  <label id="captcha-label">Сколько будет 3 + 5?</label>
+                  <input type="number" id="captcha-input" required>
+              </div>
+
+              <div class="form-checkbox">
+                  <input type="checkbox" id="privacy" required>
+                  <label for="privacy">Я согласен с <a href="personal-data-policy.html">политикой обработки данных</a></label>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">
+                  Запросить доступ
+              </button>
+
+              <div class="form-status" id="form-status"></div>
+          </form>
+
+      </div>
+  </div>
+</section>
+
+
     </main>
 
     <footer class="footer">
@@ -105,6 +440,11 @@
       </div>
   </div>
 </footer>
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="cookies.html">Cookie политике</a>.</p>
+          <button class="btn btn--primary btn--sm" id="accept-cookies">Принять</button>
+      </div>
+    </div>
   </body>
 </html>
